@@ -1,0 +1,26 @@
+{
+    "name": "fwkit/slim-sample",
+    "description": "Slim sample app",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Fung Wing Kit",
+            "email": "wengee@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "require": {
+        "slim/slim": "^4.3",
+        "slim/psr7": "^0.6.0"
+    },
+    "require-dev": {
+        "fwkit/phar-builder": "^2.0"
+    },
+    "scripts": {
+        "build": "composer dump-autoload -a && php build.php && composer dump-autoload"
+    }
+}
